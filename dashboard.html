@@ -235,32 +235,32 @@
         }
 
         .btn-primary {
-            background-color: var(--primary-color);
+            background-color: #8B5CF6;
             color: white;
         }
 
         .btn-primary:hover:not(:disabled) {
-            background-color: var(--primary-dark);
+            background-color: #7C3AED;
             transform: translateY(-1px);
             box-shadow: var(--shadow-md);
         }
 
         .btn-success {
-            background-color: var(--success-color);
+            background-color: #F59E0B;
             color: white;
         }
 
         .btn-success:hover:not(:disabled) {
-            background-color: var(--success-dark);
+            background-color: #D97706;
         }
 
         .btn-danger {
-            background-color: var(--danger-color);
+            background-color: #EF4444;
             color: white;
         }
 
         .btn-danger:hover:not(:disabled) {
-            background-color: var(--danger-dark);
+            background-color: #DC2626;
         }
 
         .btn-secondary {
@@ -926,7 +926,7 @@
         /**
          * Delete a course
          */
-        async function deleteCourse(id, courseName) {
+        async function handleDelete(id, courseName) {
             if (!confirm(`Are you sure you want to delete "${courseName}"?\n\nThis action cannot be undone.`)) {
                 return;
             }
@@ -1019,8 +1019,8 @@
                         <button class="btn btn-success btn-sm" onclick="openEditModal(${course.id})">
                             ✏️ Edit
                         </button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteCourse(${course.id}, '${escapeHtml(course.name)}')">
-                            🗑️ Delete
+                        <button class="btn btn-danger btn-sm" onclick="handleDelete(${course.id}, '${escapeHtml(course.name)}')">
+                            🗑️ Remove
                         </button>
                     </div>
                 </div>
