@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Python Basics",
+        "description": "Learn Python fundamentals including variables, data types, control structures, and functions",
+        "target_date": "2025-12-31",
+        "status": "In Progress",
+        "created_at": "2025-11-04 10:30:00"
+    },
+    {
+        "id": 2,
+        "name": "Flask Web Development",
+        "description": "Master Flask framework to build REST APIs and web applications",
+        "target_date": "2026-01-15",
+        "status": "Not Started",
+        "created_at": "2025-11-04 11:00:00"
+    },
+    {
+        "id": 3,
+        "name": "JavaScript ES6+",
+        "description": "Modern JavaScript features including arrow functions, promises, async/await, and modules",
+        "target_date": "2025-11-30",
+        "status": "Completed",
+        "created_at": "2025-11-04 11:15:00"
+    }
+]
